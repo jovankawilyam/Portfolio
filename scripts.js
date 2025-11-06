@@ -1,7 +1,23 @@
 // JavaScript Document
 
 // Neural Network Background Animation
- 
+
+        
+const carousel = document.getElementById('skillsCarousel');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+if (nextBtn && prevBtn && carousel) {
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 200, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -200, behavior: 'smooth' });
+  });
+}
+
+        
         const canvas = document.getElementById('neural-bg');
         const ctx = canvas.getContext('2d');
         let nodes = [];
@@ -139,6 +155,20 @@
                 }
             });
         });
+        // Animate skill bars on scroll
+const skillBars = document.querySelectorAll('.skill-bar');
+
+window.addEventListener('scroll', () => {
+  skillBars.forEach(bar => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.8) {
+      const fill = bar.querySelector('.fill');
+      const width = fill.getAttribute('style').match(/width:\s*(\d+)%/)[1];
+      fill.style.width = width + '%';
+    }
+  });
+});
+
 
         // Form submission
        // === Google Apps Script Web App URL ===
