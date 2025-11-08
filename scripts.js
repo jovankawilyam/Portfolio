@@ -172,7 +172,7 @@ window.addEventListener('scroll', () => {
 
         // Form submission
        // === Google Apps Script Web App URL ===
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwfIPVqAt8pAxlF4SIZ19kVRYOU563zmql8AAyhIhf1MO-nb2gvPtqVz4QGdOHMmIt8/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzMIQS_0JMbuJNwBgisval5ZJYa2BSSts6pX9Qa5GEiklz9M28tnSnaIUHrji1BjIN4/exec';
 
 const form = document.querySelector('.contact-form');
 const statusMessage = document.querySelector('.status-message');
