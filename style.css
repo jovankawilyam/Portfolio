@@ -1160,3 +1160,22 @@
                 font-size: 1.5rem;
             }
         }
+        /* === Achievements Section === */
+#achievements ul li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 25px;
+  font-size: 1rem;
+}
+
+#achievements ul li::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--secondary);
+}
+#about .neural-btn {
+  margin-top: 15px;
+  display: inline-block;
+}
