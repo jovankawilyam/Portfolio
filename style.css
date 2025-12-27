@@ -1178,4 +1178,19 @@
 #about .neural-btn {
   margin-top: 15px;
   display: inline-block;
+  text-decoration: none;
+}
+
+.project-link {
+  text-decoration: none; /* hilangkan garis bawah */
+  color: inherit; /* ikuti warna teks dalam kartu */
+}
+
+.project-link .project-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-link .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
