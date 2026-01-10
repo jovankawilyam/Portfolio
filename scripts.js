@@ -155,19 +155,7 @@ if (nextBtn && prevBtn && carousel) {
                 }
             });
         });
-        // Animate skill bars on scroll
-const skillBars = document.querySelectorAll('.skill-bar');
-
-window.addEventListener('scroll', () => {
-  skillBars.forEach(bar => {
-    const rect = bar.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.8) {
-      const fill = bar.querySelector('.fill');
-      const width = fill.getAttribute('style').match(/width:\s*(\d+)%/)[1];
-      fill.style.width = width + '%';
-    }
-  });
-});
+;
 
 
         // Form submission
